@@ -1,2 +1,1 @@
-# WEB-DESIGN
-Initial Commit
+WEB-DESIGN
