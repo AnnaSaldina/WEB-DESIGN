@@ -1,0 +1,16 @@
+footer
+{
+    word-spacing: 2px;
+    text-align: center;
+    height: 2em;
+    padding: 2em 10%;
+    background: #7500c4;
+}
+footer a { margin-left: 20px; }
+footer nav { display: inline-block; }
+footer::after
+{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
