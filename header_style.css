@@ -42,4 +42,5 @@ header > div h1 {
 header nav a {
     padding: 0 0.6em;
     white-space: nowrap;
+    font-size: 18px;
 }

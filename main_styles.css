@@ -1,6 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
 * { padding: 0; margin: 0; }
-body { background: rgb(235, 235, 235); font-family: 'Lato', sans-serif; letter-spacing: 1px;}
+body { background: rgb(235, 235, 235); font-family: 'Ubuntu', sans-serif; letter-spacing: 1px;}
 *,
 :after,
 :before {
@@ -12,6 +11,7 @@ h2
     text-align:center;
     font-weight:700;
     text-transform:uppercase;
+    font-family: 'Cuprum', sans-serif;
     padding-top: 70px;
 }
 
@@ -42,7 +42,7 @@ h2
 .home .heading h1 {
     text-transform:uppercase;
     font-size:48px;
-    font-family:Oswald,sans-serif;
+    font-family:'Oswald',sans-serif;
     letter-spacing:1px
 }
 
@@ -106,7 +106,7 @@ main
 #portfolio,
 #skills
 {
-    padding:50px 0 100px;
+    padding:50px 0 50px;
     margin:0 auto
 }
 
@@ -145,10 +145,14 @@ main
 {
     line-height:1.4em
 }
+#services .services_container .services_item .services_item_title {
+    font-family:'Tomorrow',sans-serif;
+}
 
 .home .heading_bottom {
     position: absolute;
     width: 100%;
     bottom: 260px;
     text-align: center;
+    letter-spacing: inherit;
 }
