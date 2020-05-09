@@ -156,3 +156,30 @@ main
     text-align: center;
     letter-spacing: inherit;
 }
+
+
+.holder{
+    position:relative;   
+    width:250px;
+    height:250px;
+    margin:100px auto;
+}
+.hidden_block{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    background:rgba(255,255,255, 0.9);
+    border:2px solid  rgb(86, 18, 194, 0.900);
+    padding:5px;
+    margin:auto;
+    text-align:center;
+    opacity:0;
+    transition: 1s;
+}
+.holder:hover .hidden_block{
+    display:block;
+    opacity:1;
+    transition: 1s;
+}
