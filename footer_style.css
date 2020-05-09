@@ -4,7 +4,7 @@ footer
     text-align: center;
     height: 2em;
     padding: 2em 10%;
-    background: #7500c4;
+    background-color: rgb(86, 18, 194, 0.900);
 }
 footer a { margin-left: 20px; }
 footer nav { display: inline-block; }

@@ -1,9 +1,13 @@
 header {
+    position: fixed;
+    top:0;
+    width:90%;
+    z-index: 2;
     text-align: justify;
-    height: 8em;
+    height: 2em;
     padding: 2em 5%;
-    background: #7500c4;
-    color: #fff;
+    background-color: rgb(86, 18, 194, 0.900);
+    color: #fff
 }
  
 header::after {
@@ -15,7 +19,8 @@ header::after {
 header > div,
 header > div::before,
 header nav,
-header > div h1 {
+header > div h1,
+header > div img {
     display: inline-block;
     vertical-align: middle;
     text-align: left;
@@ -31,8 +36,7 @@ header > div::before {
 }
  
 header > div h1 {
-    font-size: 3em;
-    font-style: italic;
+    font-size: 2em;
 }
  
 header nav a {

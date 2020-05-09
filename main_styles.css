@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
 * { padding: 0; margin: 0; }
-body { background: #ebece5; font-family: 'Lato', sans-serif; letter-spacing: 1px;}
+body { background: rgb(235, 235, 235); font-family: 'Lato', sans-serif; letter-spacing: 1px;}
 *,
 :after,
 :before {
@@ -13,11 +13,49 @@ h2
     font-weight:700;
     text-transform:uppercase
 }
+
+.home {
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    background:url(images/home.jpg) fixed no-repeat;
+    background-size:cover;
+    filter: grayscale(100%);
+    color:#fff
+}
+
+.home .heading,
+.home .home-overlay {
+    width:100%;
+    position:absolute;
+    left:0
+}
+.home .heading {
+    top:50%;
+    text-align:center;
+    transform:translateY(-50%);
+    padding:0 10px
+}
+.home .heading p {
+    font-size:22px
+   }
+.home .heading h1 {
+    text-transform:uppercase;
+    font-size:48px;
+    font-family:Oswald,sans-serif;
+    letter-spacing:1px
+}
+
+
 #about_me p
 {
     text-align:center;
 }
 
+main
+{
+    z-index: 1;
+}
 
 @media screen and (max-width: 720px){
     
@@ -58,11 +96,16 @@ h2
 }
 
 
-#services
+#services,
+#portfolio,
+#skills
 {
     padding:50px 0 100px;
     margin:0 auto
 }
+
+#portfolio .services_container,
+#skills .services_container,
 #services .services_container
 {
     display:flex;
@@ -71,10 +114,13 @@ h2
     align-items:center;
     flex-wrap:wrap
 }
-#services .services_container .services_item
+
+#services .services_container .services_item,
+#portfolio .services_container .services_item,
+#skills .services_container .services_item
 {
     margin:30px auto;
-    background-color:#ffdf00;
+    background-color: #fff;
     max-width:300px;
     width:80%;
     min-width:200px;
@@ -82,19 +128,14 @@ h2
     padding:15px;
     /*opacity:0*/
 }
-#services .services_container .services_item .images
+#services .services_container .services_item .fullstack_images
 {
-    font-size:70px
+    font-size: 70px;
+    display: inline-block;
 }
-#services .services_container .services_frontend .images i
-{
-    color:#1e90ff
-}
-#services .services_container .services_backend .images i
-{
-    color:#762da9
-}
-#services .services-container .services-item .services_item_description
+#services .services-container .services-item .services_item_description,
+#portfolio .services_container .services_item .services_item_description,
+#skills .services_container .services_item .services_item_description
 {
     line-height:1.4em
 }
