@@ -11,17 +11,17 @@ h2
     font-size:32px;
     text-align:center;
     font-weight:700;
-    text-transform:uppercase
+    text-transform:uppercase;
+    padding-top: 70px;
 }
 
 .home {
     position:relative;
     width:100%;
     min-height:100vh;
-    background:url(images/home.jpg) fixed no-repeat;
+    background:url(images/home_mono.jpg) fixed no-repeat;
     background-size:cover;
-    filter: grayscale(100%);
-    color:#fff
+    color:rgb(255, 255, 255)
 }
 
 .home .heading,
@@ -79,6 +79,12 @@ main
     color: white;
     text-decoration: none;
     cursor: pointer;
+
+}
+
+.navigation .link:hover
+{
+    color: rgb(240, 240, 113);
 }
 
 .div_line {
@@ -138,4 +144,11 @@ main
 #skills .services_container .services_item .services_item_description
 {
     line-height:1.4em
+}
+
+.home .heading_bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 260px;
+    text-align: center;
 }
