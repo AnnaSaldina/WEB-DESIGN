@@ -169,7 +169,7 @@ main
     bottom:0;
     right:0;
     top:0;
-    background:rgba(255,255,255, 0.9);
+    background:rgba(255,255,255, 0.95);
     border:2px solid  rgb(86, 18, 194, 0.900);
     padding:5px;
     margin:auto;
@@ -182,3 +182,32 @@ main
     opacity:1;
     transition: 1s;
 }
+
+
+.diagram {
+    width: 100px; height: 100px;
+    text-align: center;
+    border: 24px solid rgb(243, 86, 38);
+    border-right: 24px solid rgb(255, 159, 114);
+    border-radius: 100px;
+    margin:10px auto 10px;
+    padding-top: 15px;
+    
+}
+
+.circle {
+    display: block;
+    float: left;
+}
+circle {
+  fill: rgba(0,0,0,0);
+  stroke: rgb(255, 159, 114);
+  stroke-width: 15;
+  stroke-dasharray: 408px 408px;
+}
+circle:nth-child(2n) {
+  fill: rgba(0,0,0,0);
+  stroke: rgb(243, 86, 38);
+  stroke-width: 15;
+}
+
