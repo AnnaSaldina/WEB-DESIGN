@@ -1,11 +1,10 @@
 header {
     position: fixed;
     top:0;
-    width:90%;
+    width:100%;
     z-index: 2;
     text-align: justify;
-    height: 2em;
-    padding: 2em 5%;
+    height: 5em;
     background-color: rgb(86, 18, 194, 0.900);
     color: #fff
 }
@@ -24,6 +23,10 @@ header > div img {
     display: inline-block;
     vertical-align: middle;
     text-align: left;
+
+}
+header > div img {
+    padding-left: 5em;
 }
  
 header > div {

@@ -1,4 +1,4 @@
-* { padding: 0; margin: 0; }
+* { padding: 0; margin: 0; cursor: default; }
 body { background: rgb(235, 235, 235); font-family: 'Ubuntu', sans-serif; letter-spacing: 1px;}
 *,
 :after,
@@ -82,9 +82,10 @@ main
 
 }
 
-.navigation .link:hover
+.navigation .link:hover,
+.footer .link:hover
 {
-    color: rgb(240, 240, 113);
+    color: rgb(240, 240, 73);
 }
 
 .div_line {
@@ -110,7 +111,7 @@ main
     margin:0 auto
 }
 
-#portfolio .services_container,
+
 #skills .services_container,
 #services .services_container
 {
@@ -122,10 +123,9 @@ main
 }
 
 #services .services_container .services_item,
-#portfolio .services_container .services_item,
 #skills .services_container .services_item
 {
-    margin:30px auto;
+    margin:30px 50px;
     background-color: #fff;
     max-width:300px;
     width:80%;
@@ -140,7 +140,6 @@ main
     display: inline-block;
 }
 #services .services-container .services-item .services_item_description,
-#portfolio .services_container .services_item .services_item_description,
 #skills .services_container .services_item .services_item_description
 {
     line-height:1.4em

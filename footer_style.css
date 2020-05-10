@@ -2,12 +2,12 @@ footer
 {
     word-spacing: 2px;
     text-align: center;
-    height: 2em;
-    padding: 2em 10%;
+    height: 5em;
+    bottom: 0;
     background-color: rgb(86, 18, 194, 0.900);
 }
 footer a { margin-left: 20px; margin-top: 10px; }
-footer div { display: inline-block; }
+footer div { display: inline-block; padding-top: 2em; }
 footer::after
 {
     content: '';
